@@ -24,4 +24,11 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  console.log(message.content)
+  if (message.content.includes('menacing') || message.content.includes('Menacing')) {
+    message.reply("This is Alexbot. I think you meant ゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴ");
+  }
+});
+
 client.login(token);  
