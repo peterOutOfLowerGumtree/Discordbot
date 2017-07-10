@@ -7,7 +7,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-// Ping/pong
+// Ping pong
 client.on('message', message => {
   if (message.content.includes('ping')||message.content.includes('Ping')) {
     message.reply('pong');
