@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <style>
+            body {
+                    font-family:courier;
+                    background-color:powderblue;
+                    text-align:center;
+                }
+                #text {
+                    width:80%;
+                    margin:auto;
+                    border:3px dotted black;
+                    background:white;
+                    padding: 15px;
+                    background-clip:padding-box
+                }
+                h1, h2, inputs {
+                    font-variant:small-caps;
+                    text-align:center;
+
+                }
+        </style>
+	</head>
+
+	<body>
+		<script>
+		</script>
+        <h1>Hello World!</h1>
+	</body>
+</html>
