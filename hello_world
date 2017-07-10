@@ -7,18 +7,15 @@
                     background-color:powderblue;
                     text-align:center;
                 }
-                #text {
+                h1 {
                     width:80%;
                     margin:auto;
                     border:3px dotted black;
                     background:white;
                     padding: 15px;
-                    background-clip:padding-box
-                }
-                h1, h2, inputs {
+                    background-clip:padding-box;
                     font-variant:small-caps;
                     text-align:center;
-
                 }
         </style>
 	</head>
