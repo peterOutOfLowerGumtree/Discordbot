@@ -8,16 +8,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if(message.content.includes('!bot')) {
-    if(message.content.includes('hw')) {
-      message.reply('Hello World!')
-    }
-    else if(message.content.includes('beRude')) {
-      message.reply('Get lost!')
-    }
-    else if(message.content.includes('kiss')) {
-      message.reply("😘")
-    }
+  if(message.content.includes('!hw')) {
+    message.reply('Hello World!')
+  }
+  else if(message.content.includes('!beRude')) {
+    message.reply('Get lost!')
+  }
+  else if(message.content.includes('!kiss')) {
+    message.reply("😘")
   }
 });
 
