@@ -14,7 +14,7 @@ client.on('message', message => {
   else if(message.content.includes('!beRude')) {
     message.reply('Get lost!')
   }
-  else if(message.content.includes('!kiss')) {
+  else if(message.content.includes('kiss')) {
     message.reply("😘")
   }
 });
