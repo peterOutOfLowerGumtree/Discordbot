@@ -4,7 +4,10 @@ const privateStuff = require("./token");
 var token = privateStuff.key;
 var user = privateStuff.user;
 
-client.registry.registerGroup("responses")
+client.registry.registerGroups([
+    ["responses","Responses"],
+    ["jsprojects","JavaScript Projects"]
+])
 client.registry.registerDefaults();
 client.registry.registerCommandsIn(__dirname + "/commands");
 
