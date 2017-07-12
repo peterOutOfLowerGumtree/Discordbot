@@ -3,18 +3,18 @@ const client = new Discord.Client();
 const privateStuff = require("./token");
 var token = privateStuff.key
 
-client.on('ready', () => {
+client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
-  if(message.content.includes('!hw')) {
-    message.reply('Hello World!')
+client.on("message", message => {
+  if(message.content.includes("!hw")) {
+    message.reply("Hello World!")
   }
-  else if(message.content.includes('!beRude')) {
-    message.reply('Get lost!')
+  else if(message.content.includes("!beRude")) {
+    message.reply("Get lost!")
   }
-  else if(message.content.includes('kiss')) {
+  else if(message.content.includes("kiss")) {
     message.reply("😘")
   }
 });
