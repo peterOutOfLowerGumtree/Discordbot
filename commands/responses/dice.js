@@ -17,6 +17,4 @@ class diceCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    diceCommand
-};
+module.exports = diceCommand;

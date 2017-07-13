@@ -15,6 +15,4 @@ class helloCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    helloCommand
-};
+module.exports = helloCommand;

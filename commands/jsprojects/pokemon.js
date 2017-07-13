@@ -17,6 +17,4 @@ class pokemonCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    pokemonCommand
-};
+module.exports = pokemonCommand;

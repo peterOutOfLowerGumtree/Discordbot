@@ -15,6 +15,4 @@ class getLostCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    getLostCommand
-};
+module.exports = getLostCommand;

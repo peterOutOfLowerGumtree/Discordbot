@@ -17,6 +17,4 @@ class rpsCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    rpsCommand
-};
+module.exports = rpsCommand;

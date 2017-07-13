@@ -15,6 +15,4 @@ class kissCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    kissCommand
-};
+module.exports = kissCommand;

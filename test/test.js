@@ -1,5 +1,6 @@
 const pokeFunc = require("../functionality/pokeFunc.js")
 const diceFunc = require("../functionality/diceFunc.js")
+const rpsFunc = require("../functionality/rpsFunc.js")
 var assert = require("assert");
 
 
@@ -66,5 +67,17 @@ describe("diceFunc", function () {
       var result = diceFunc.diceRoll("");
       assert.equal(result, "Enter a valid dice type (20, 12, 10, 8, 6, 4).\neg: dice 20");
     });
+  });
+});
+
+describe("rpsFunc", function () {
+  it("Should return a \"Rock vs <computer selection>\" output", function () {
+    var result = rpsFunc.calculateWinner("rock");
+    assert.equal(
+      (result == "Rock draws with rock. No one wins!" ||
+      result == "Rock is covered by paper. Bot wins!"||
+      result == "Rock crushes scissors. Player wins!"||
+      result == "Rock crushes lizard. Player wins!"||
+      result == "Rock is vaporised by Spock. Bot wins!"), true);
   });
 });

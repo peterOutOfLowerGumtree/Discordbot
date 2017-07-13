@@ -16,6 +16,4 @@ class catCommand extends commando.Command {
     }
 }
 
-module.exports = {
-    catCommand
-};
+module.exports = catCommand;
