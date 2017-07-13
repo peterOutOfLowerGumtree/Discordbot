@@ -10,8 +10,8 @@ class getLostCommand extends commando.Command {
             example: "berude"
         });
     }
-    async run(message, args) {
-        message.reply("Get Lost!");
+    async run(message) {
+        message.reply("Get lost!")
     }
 }
 

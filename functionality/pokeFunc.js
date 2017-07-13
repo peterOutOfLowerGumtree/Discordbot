@@ -42,7 +42,7 @@ const typeChart = {
 
 function calcMatchup(args) {
     if (args) {
-        var pokemonString = args.toString().split(" ");
+        var pokemonString = args.toString().toLowerCase().split(" ");
         if (pokemonString.length > 1) {
             var attackString = pokemonString[0];
             var defenceString = pokemonString[1];
