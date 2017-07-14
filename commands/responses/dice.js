@@ -1,5 +1,5 @@
 const commando = require("discord.js-commando");
-const diceFunc = require("../../functionality/diceFunc.js")
+const diceFunc = require("../../functionality/diceFunc.js");
 
 class diceCommand extends commando.Command {
     constructor(bot) {

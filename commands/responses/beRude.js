@@ -11,7 +11,7 @@ class getLostCommand extends commando.Command {
         });
     }
     async run(message) {
-        message.reply("Get lost!")
+        message.reply("Get lost!");
     }
 }
 

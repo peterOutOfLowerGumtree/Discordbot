@@ -17,8 +17,8 @@ class wolfCommand extends commando.Command {
     async run(message, args) {
         let dogs = function (msg) {
             message.reply(args+" = "+msg);
-        }
-        wolfFunc.wolf(args, dogs)
+        };
+        wolfFunc.wolf(args, dogs);
     }
 }
 

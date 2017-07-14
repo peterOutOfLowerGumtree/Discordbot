@@ -4,7 +4,7 @@ ownerid:"333971713739980801"});
 const privateStuff = require("./token");
 var token = privateStuff.key;
 var user = privateStuff.user;
-var wolfram = require("wolfram").createClient(privateStuff.waKey)
+var wolfram = require("wolfram").createClient(privateStuff.waKey);
 
 client.registry.registerGroups([
   ["responses", "Responses"],
