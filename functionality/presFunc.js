@@ -42,11 +42,11 @@ Bill Clinton, Aug 19 1946, Hope Arkansas, ,
 George W. Bush, Jul 06 1946, New Haven Conn., , ,
 Barack Obama, Aug 04 1961, Honolulu Hawaii, , `;
 
-const lines = presidents.split('\n'); //Split by new line
+const lines = presidents.split("\n"); //Split by new line
 
 const presidentsArray = [];
 for (var i = 0; i < lines.length; i++) {
-    presidentsArray[i] = lines[i].split(','); //Split by comma
+    presidentsArray[i] = lines[i].split(","); //Split by comma
 }
 
 function checkAlive(date, callback) {
