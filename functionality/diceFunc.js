@@ -22,7 +22,9 @@ function diceRoll(args) {
         } else {
             return ("Invalid dice type!");
         }
-    } else return ("Enter a valid dice type (20, 12, 10, 8, 6, 4).\neg: dice 20");
+    } else {
+        return ("Enter a valid dice type (20, 12, 10, 8, 6, 4).\neg: dice 20");
+    }
 }
 
 module.exports = {

@@ -49,8 +49,12 @@ function calcMatchup(args) {
             var row = typeChart[attackString];
             var column = typeOrder[defenceString];
             return (attackString + " is " + row[column] + "x effective against " + defenceString);
-        } else return ("Invalid number of arguments");
-    } else return ("Enter an attacking type and defending type.\neg: !pokemontype fire water");
+        } else {
+            return ("Invalid number of arguments");
+        }
+    } else {
+        return ("Enter an attacking type and defending type.\neg: !pokemontype fire water");
+    }
 }
 
 module.exports = {

@@ -126,6 +126,6 @@ describe("wolfFunc", function () {
 
   it("Should output a link to a graph image", function () {
     var result = wolfFunc.wolf("graph y=sin(x^2)", (a) => assert.equal(a, "http://www3.wolframalpha.com/Calculate/MSP/MSP17391bd4913154dbeib3000052c1hcif4ef16f8f?MSPStoreType=image/gif&s=39"));
-    result = wolfFunc.wolf("graph y=sin(2x)", (a) => assert.equal(a, "http://www4d.wolframalpha.com/Calculate/MSP/MSP327623d061070771d889000020438dh6f99ba76c?MSPStoreType=image/gif&s=32"))
+    result = wolfFunc.wolf("graph y=sin(2x)", (a) => assert.equal(a, "http://www4d.wolframalpha.com/Calculate/MSP/MSP327623d061070771d889000020438dh6f99ba76c?MSPStoreType=image/gif&s=32"));
   });
 });

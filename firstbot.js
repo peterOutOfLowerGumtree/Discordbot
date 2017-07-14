@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const privateStuff = require("./token");
-var token = privateStuff.key
+var token = privateStuff.key;
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("message", message => {
+client.on("message", (message) => {
   if(message.content.includes("!hw")) {
     message.reply("Hello World!");
   }
