@@ -1,0 +1,2 @@
+# Discordbot
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/155f054882c64baaa07d6d432ff60692)](https://www.codacy.com/app/peterOutOfLowerGumtree/Discordbot?utm_source=github.com&utm_medium=referral&utm_content=peterOutOfLowerGumtree/Discordbot&utm_campaign=badger)
