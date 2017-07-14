@@ -1,9 +1,9 @@
-const pokeFunc = require("../functionality/pokeFunc.js")
-const diceFunc = require("../functionality/diceFunc.js")
-const rpsFunc = require("../functionality/rpsFunc.js")
-const wolfFunc = require("../functionality/wolfFunc.js")
-const privateStuff = require("../token")
-var wolfram = require('wolfram').createClient(privateStuff.waKey)
+const pokeFunc = require("../functionality/pokeFunc.js");
+const diceFunc = require("../functionality/diceFunc.js");
+const rpsFunc = require("../functionality/rpsFunc.js");
+const wolfFunc = require("../functionality/wolfFunc.js");
+const privateStuff = require("../token");
+var wolfram = require("wolfram").createClient(privateStuff.waKey);
 var assert = require("assert");
 
 
@@ -78,21 +78,21 @@ describe("rpsFunc", function () {
     it("Should return a \"Rock vs <computer selection>\" output", function () {
       var result = rpsFunc.calculateWinner("rock");
       assert.equal(
-        (result == "Rock draws with rock. No one wins!" ||
-          result == "Rock is covered by paper. Bot wins!" ||
-          result == "Rock crushes scissors. Player wins!" ||
-          result == "Rock crushes lizard. Player wins!" ||
-          result == "Rock is vaporised by Spock. Bot wins!"), true);
+        (result === "Rock draws with rock. No one wins!" ||
+          result === "Rock is covered by paper. Bot wins!" ||
+          result === "Rock crushes scissors. Player wins!" ||
+          result === "Rock crushes lizard. Player wins!" ||
+          result === "Rock is vaporised by Spock. Bot wins!"), true);
     });
 
     it("Should return a \"Lizard vs <computer selection>\" output", function () {
       var result = rpsFunc.calculateWinner("lizard");
       assert.equal(
-        (result == "Lizard is crushed by rock. Bot wins!" ||
-          result == "Lizard eats paper. Player wins!" ||
-          result == "Lizard is decapitated by scissors. Bot wins!" ||
-          result == "Lizard draws with lizard. No one wins!" ||
-          result == "Lizard poisons Spock. Player wins!"), true);
+        (result === "Lizard is crushed by rock. Bot wins!" ||
+          result === "Lizard eats paper. Player wins!" ||
+          result === "Lizard is decapitated by scissors. Bot wins!" ||
+          result === "Lizard draws with lizard. No one wins!" ||
+          result === "Lizard poisons Spock. Player wins!"), true);
     });
   });
 
@@ -100,11 +100,11 @@ describe("rpsFunc", function () {
     it("Should be false vs a \"Rock vs <computer selection>\" output", function () {
       var result = rpsFunc.calculateWinner("scissors");
       assert.equal(
-        (result == "Rock draws with rock. No one wins!" ||
-          result == "Rock is covered by paper. Bot wins!" ||
-          result == "Rock crushes scissors. Player wins!" ||
-          result == "Rock crushes lizard. Player wins!" ||
-          result == "Rock is vaporised by Spock. Bot wins!"), false);
+        (result === "Rock draws with rock. No one wins!" ||
+          result === "Rock is covered by paper. Bot wins!" ||
+          result === "Rock crushes scissors. Player wins!" ||
+          result === "Rock crushes lizard. Player wins!" ||
+          result === "Rock is vaporised by Spock. Bot wins!"), false);
     });
 
     it("Should return an \"Enter a valid input\" output", function () {

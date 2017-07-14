@@ -1,5 +1,6 @@
 const commando = require("discord.js-commando");
-const client = new commando.Client();
+const client = new commando.Client({
+ownerid:"333971713739980801"});
 const privateStuff = require("./token");
 var token = privateStuff.key;
 var user = privateStuff.user;
@@ -9,7 +10,8 @@ client.registry.registerGroups([
   ["responses", "Responses"],
   ["jsprojects", "JavaScript Projects"],
   ["apis", "Apis"]
-])
+]);
+
 client.registry.registerDefaults();
 client.registry.registerCommandsIn(__dirname + "/commands");
 

@@ -8,9 +8,9 @@ var userArray = {
 
 function calculateWinner(args) {
     if (args) {
-        userSelection = args.toString();
-        row = userArray[userSelection];
-        index = Math.floor(Math.random() * 5);
+        var userSelection = args.toString();
+        var row = userArray[userSelection];
+        var index = Math.floor(Math.random() * 5);
         return (row[index]);
     } else return ("Enter rock/paper/scissors/lizard/spock.\neg: rps rock");
 };

@@ -1,5 +1,6 @@
 function diceRoll(args) {
     if (args) {
+        var output;
         if (args.includes("20")) {
             output = Math.floor(Math.random() * 20 + 1);
             return ("Your random d20 number is: " + output);

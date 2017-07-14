@@ -9,13 +9,13 @@ client.on("ready", () => {
 
 client.on("message", message => {
   if(message.content.includes("!hw")) {
-    message.reply("Hello World!")
+    message.reply("Hello World!");
   }
   else if(message.content.includes("!beRude")) {
-    message.reply("Get lost!")
+    message.reply("Get lost!");
   }
   else if(message.content.includes("kiss")) {
-    message.reply("😘")
+    message.reply("😘");
   }
 });
 
