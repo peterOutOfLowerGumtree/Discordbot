@@ -13,6 +13,7 @@ class mockCommand extends commando.Command {
     }
     async run(message, args) {
         message.reply(sponge.spongeMock(args));
+        message.channel.send({files: ["./node_modules/spongemock/sPoNgEBoB.jpg"]});
     }
 }
 

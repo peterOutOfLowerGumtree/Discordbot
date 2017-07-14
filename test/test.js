@@ -2,6 +2,8 @@ const pokeFunc = require("../functionality/pokeFunc.js");
 const diceFunc = require("../functionality/diceFunc.js");
 const rpsFunc = require("../functionality/rpsFunc.js");
 const wolfFunc = require("../functionality/wolfFunc.js");
+const presFunc = require("../functionality/presFunc.js");
+
 const privateStuff = require("../token");
 var wolfram = require("wolfram").createClient(privateStuff.waKey);
 var assert = require("assert");
@@ -127,5 +129,15 @@ describe("wolfFunc", function () {
   it("Should output a link to a graph image", function () {
     var result = wolfFunc.wolf("graph y=sin(x^2)", (a) => assert.equal(a, "http://www3.wolframalpha.com/Calculate/MSP/MSP17391bd4913154dbeib3000052c1hcif4ef16f8f?MSPStoreType=image/gif&s=39"));
     result = wolfFunc.wolf("graph y=sin(2x)", (a) => assert.equal(a, "http://www4d.wolframalpha.com/Calculate/MSP/MSP327623d061070771d889000020438dh6f99ba76c?MSPStoreType=image/gif&s=32"));
+  });
+});
+
+describe("presFunc", function () {
+  it("Should output the correct presidents for test date 1900", function () {
+    var result = presFunc.whoIsAlive("1900", (a) => assert.equal(a, "Grover Cleveland\nBenjamin Harrison\nWilliam McKinley\nTheodore Roosevelt\nWilliam Howard Taft\nWoodrow Wilson\nWarren G. Harding\nCalvin Coolidge\nHerbert Hoover\nFranklin Roosevelt\nHarry S. Truman\nDwight Eisenhower\n"));
+  });
+
+  it("Should output the correct presidents for test date 2000", function () {
+    var result = presFunc.whoIsAlive("2000", (a) => assert.equal(a, "Gerald Ford\nJimmy Carter\nRonald Reagan\nGeorge Bush\nBill Clinton\nGeorge W. Bush\nBarack Obama\n"));
   });
 });

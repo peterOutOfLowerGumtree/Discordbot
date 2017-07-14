@@ -1,6 +1,8 @@
+var sponge = require("spongemock");
 const commando = require("discord.js-commando");
 const client = new commando.Client({
-ownerid:"333971713739980801"});
+  ownerid: "333971713739980801", commandPrefix:"~"
+});
 const privateStuff = require("./token");
 var token = privateStuff.key;
 var user = privateStuff.user;
