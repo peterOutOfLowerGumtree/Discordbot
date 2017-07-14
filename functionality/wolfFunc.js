@@ -1,6 +1,17 @@
 const privateStuff = require("../token");
 var wolfram = require("wolfram").createClient(privateStuff.waKey);
 
+function graphFunc(result, callback) {
+    var wolfNum;
+    if (result[1].subpods[1]) {
+        wolfNum = result[1].subpods[1].image;
+        callback(wolfNum);
+    } else {
+        wolfNum = result[1].subpods[0].image;
+        callback(wolfNum);
+    }
+}
+
 function wolf(args, callback) {
     wolfram.query(args, function (err, result) {
         var wolfNum;
@@ -21,17 +32,6 @@ function wolf(args, callback) {
             callback("Please enter a valid argument (+,-,*,/,^,{integrate [function]},{differentiate [function]},{graph [function]})");
         }
     });
-
-
-    function graphFunc(result, callback) {
-        if (result[1].subpods[1]) {
-            var wolfNum = result[1].subpods[1].image;
-            callback(wolfNum);
-        } else {
-            wolfNum = result[1].subpods[0].image;
-            callback(wolfNum);
-        }
-    }
 }
 
 module.exports = {
