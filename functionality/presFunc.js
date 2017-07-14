@@ -53,7 +53,7 @@ function checkAlive(date, callback) {
     var output = "";
     for (var i = 0; i < presidentsArray.length; i++) {
         if ((date <= parseInt(presidentsArray[i][3].substring(7, 12)) && date > parseInt(presidentsArray[i][1].substring(7, 12))) ||
-            (presidentsArray[i][3] == " " && date > parseInt(presidentsArray[i][1].substring(7, 12)))) {
+            (presidentsArray[i][3] === " " && date > parseInt(presidentsArray[i][1].substring(7, 12)))) {
             output += presidentsArray[i][0] + "\n";
         }
     }
