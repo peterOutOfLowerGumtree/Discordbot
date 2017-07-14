@@ -31,4 +31,4 @@ function wolf(args, callback) {
 
 module.exports = {
     wolf
-}
+};

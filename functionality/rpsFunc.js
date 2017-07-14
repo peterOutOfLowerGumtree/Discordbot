@@ -19,4 +19,4 @@ function calculateWinner(args) {
 
 module.exports = {
     calculateWinner
-}
+};

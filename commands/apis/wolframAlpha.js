@@ -1,7 +1,7 @@
 const commando = require("discord.js-commando");
 const wolfFunc = require("../../functionality/wolfFunc.js");
 const privateStuff = require("../../token");
-var wolfram = require('wolfram').createClient(privateStuff.waKey);
+var wolfram = require("wolfram").createClient(privateStuff.waKey);
 
 class wolfCommand extends commando.Command {
     constructor(bot) {
